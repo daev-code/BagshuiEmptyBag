@@ -1,0 +1,17 @@
+# Text files: UTF-8 without BOM, LF line endings in the repo and on checkout
+# (overrides core.autocrlf, so Windows checkouts stay LF too).
+* text=auto eol=lf
+
+*.lua           text eol=lf
+*.toc           text eol=lf
+*.xml           text eol=lf
+*.md            text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
+
+# Game assets
+*.tga  binary
+*.blp  binary
+*.png  binary
+*.jpg  binary
+*.ttf  binary
