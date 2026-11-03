@@ -51,3 +51,5 @@ that both copies are identical (for example by comparing hashes).
    keep personal details (names, local paths, account or character names) out of files and
    commit messages, and don't name the specific client, launcher, server or realm this is
    played on. Say "WoW 1.12" and link the repo of the addon being extended instead.
+6. Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages
+   and PR titles (`feat:`, `fix:`, `docs:`, `refactor:`, `chore:`). See `CONTRIBUTING.md`.
