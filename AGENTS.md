@@ -27,9 +27,13 @@ Files: `BagshuiEmptyBag.toc`, `BagshuiEmptyBag.lua`, `README.md` (user docs), th
 
 ## Working copy vs repo
 
-The live copy is in the game's `Interface\AddOns\BagshuiEmptyBag` folder. Edit there, test in game with
-`/reload`, then copy the changed files into this repo and commit. Before committing, check
-that both copies are identical (for example by comparing hashes).
+Edit the files in this repo, not the game's copy. To test, copy the changed files into the
+game's `Interface\AddOns\BagshuiEmptyBag` folder and `/reload` in game. Before copying, check
+that the game's copy still matches the last commit (for example by comparing hashes), so you
+don't overwrite changes made there; if it doesn't, ask first.
+
+The game folder's location is in your local, private instructions. If it isn't there, ask
+for it. Never write it into this repo (it's public).
 
 ## Rules
 
@@ -46,10 +50,15 @@ that both copies are identical (for example by comparing hashes).
 2. Keep the header comment in the `.lua` in sync with what the code does.
 3. There are no automated tests: verify in game (`/reload`, and a full relog when
    SavedVariables or the `.toc` changed). Say in the report what wasn't tested.
-4. Copy the game-folder files into the repo, then commit code and docs together.
+4. Copy the changed files into the game folder and test there, then commit code and docs
+   together.
 5. Don't commit scratch notes, logs or downloaded third-party files. The repo is public:
    keep personal details (names, local paths, account or character names) out of files and
    commit messages, and don't name the specific client, launcher, server or realm this is
    played on. Say "WoW 1.12" and link the repo of the addon being extended instead.
 6. Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages
    and PR titles (`feat:`, `fix:`, `docs:`, `refactor:`, `chore:`). See `CONTRIBUTING.md`.
+7. Before pushing a change players will notice, bump `## Version:` in the `.toc` once
+   per push, in its own `chore: bump version to x.y` commit: minor (1.1 -> 1.2) when
+   there's a `feat:`, patch (1.1 -> 1.1.1) for fixes only. Docs-only and other changes
+   players don't notice don't need a bump.
