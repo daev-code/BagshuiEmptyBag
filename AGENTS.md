@@ -59,5 +59,5 @@ for it. Never write it into this repo (it's public).
 6. Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages
    and PR titles (`feat:`, `fix:`, `docs:`, `refactor:`, `chore:`). See `CONTRIBUTING.md`.
 7. Before pushing a change players will notice, bump `## Version:` in the `.toc` once
-   per push: minor (1.1 -> 1.2) when there's a `feat:`, patch (1.1 -> 1.1.1) for fixes
+   per push: minor (1.1.0 -> 1.2.0) when there's a `feat:`, patch (1.1.0 -> 1.1.1) for fixes
    only. Docs-only and other changes players don't notice don't need a bump.

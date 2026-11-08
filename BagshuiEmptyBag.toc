@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: Bagshui Empty Bag
 ## Notes: Adds an "Empty Bag" toolbar button to Bagshui: click it, then click a bag to move its items into free slots in your other bags.
-## Version: 1.0
+## Version: 1.0.0
 ## Author: daev-code
 ## X-Website: https://github.com/daev-code/BagshuiEmptyBag
 ## Dependencies: Bagshui
